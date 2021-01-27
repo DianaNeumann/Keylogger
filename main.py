@@ -28,6 +28,9 @@ from multiprocessing import Queue # фиксим баг при заморозк�
 TGBOT_TOKEN = 'токен вашего бота'
 TGBOT_CHAT_ID = 'chat_id вашего бота'
 
+filename = ''.join(random.choices(ASCII_UPPERCASE + ASCII_LOWERCASE, k=8))
+filepath = f'путь до файла, в котором будут лежать данные{filename}'
+
 
 ASCII_UPPERCASE = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 ASCII_LOWERCASE = 'abcdefghijklmnopqrstuvwxyz'
@@ -45,8 +48,7 @@ if win32api.GetLastError() == winerror.ERROR_ALREADY_EXISTS:
 
 
 
-filename = ''.join(random.choices(ASCII_UPPERCASE + ASCII_LOWERCASE, k=8))
-filepath = f'путь до файла, в котором будут лежать данные{filename}'
+
 
 
 
