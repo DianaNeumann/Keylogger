@@ -47,11 +47,6 @@ if win32api.GetLastError() == winerror.ERROR_ALREADY_EXISTS:
     sys.exit()
 
 
-
-
-
-
-
 def main():
     global tg_mode,savepoint, clipboard_max_len
 
